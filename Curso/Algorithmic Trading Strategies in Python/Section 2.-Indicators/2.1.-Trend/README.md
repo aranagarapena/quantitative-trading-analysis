@@ -20,5 +20,5 @@ Un indicador de tendencia es una herramienta de análisis técnico utilizada par
 
 #### ¿Cuales estudiaremos aquí?
 - Medias móviles
-- ADX
 - Bandas de Bollinger
+- ADX
