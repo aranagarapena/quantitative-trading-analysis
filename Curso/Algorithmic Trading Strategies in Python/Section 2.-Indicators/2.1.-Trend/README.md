@@ -32,6 +32,6 @@ Un indicador de tendencia es una herramienta de análisis técnico utilizada par
 - **"Technical Analysis of the Financial Markets" by John J. Murphy**: Este libro proporciona una introducción completa a los indicadores técnicos, incluidos los de tendencia.
 - **"Quantitative Trading: How to Build Your Own Algorithmic Trading Business" by Ernest P. Chan**: Explora cómo utilizar indicadores técnicos en estrategias de trading algorítmico.
 - **[Investopedia - Technical Indicators](https://www.investopedia.com/terms/t/technicalindicator.asp)**: Artículos detallados sobre una amplia gama de indicadores técnicos, incluidos los de tendencia.
-- **[TradingView - Indicators](https://www.tradingview.com/indicators/)**: Plataforma que ofrece visualización y análisis de indicadores técnicos con ejemplos prácticos.
+- **[TradingView - Indicators](https://es.tradingview.com/scripts/indicators/)**: Plataforma que ofrece visualización y análisis de indicadores técnicos con ejemplos prácticos.
 
 Estas referencias te proporcionarán una comprensión más profunda de los indicadores de tendencia y cómo aplicarlos en tu estudio de trading algorítmico.

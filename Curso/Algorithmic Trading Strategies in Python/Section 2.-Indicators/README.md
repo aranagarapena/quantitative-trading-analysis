@@ -37,6 +37,5 @@ Los indicadores en el contexto del trading algorítmico son fórmulas matemátic
    
 - **Páginas Web Populares:**
    - [Investopedia - Technical Indicators](https://www.investopedia.com/terms/t/technicalindicator.asp)
-   - [TradingView - Indicators](https://www.tradingview.com/indicators/)
 
 
