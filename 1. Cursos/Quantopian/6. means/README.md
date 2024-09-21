@@ -1,0 +1,1 @@
+Lecture 6: Means — [[📝Lecture Notebooks](https://github.com/quantopian/research_public/tree/master/notebooks/lectures/Means)] [[▶️Video](https://www.youtube.com/watch?v=XYbsBsRtCjw)]\
