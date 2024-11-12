@@ -1,7 +1,16 @@
+# Librerías básicas
 pandas
 numpy
 matplotlib
-ib_insync
 scipy
 openpyxl
 setuptools
+
+# Librerías adicionales específicas
+ib_insync
+yfinance
+plotly
+nbformat
+pandas_ta
+zipline-reloaded
+scikit-learn

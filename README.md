@@ -13,19 +13,17 @@ Este repositorio contiene material de análisis cuantitativo aplicado al trading
 
 Contribuciones y mejoras son bienvenidas.
 
-Estoy trabajando con un entorno virtual:
+En el repo hay un script para crear un entorno viertual de trabajo con todas las dependencias instaldas, pero:
+- Primero de todo recomiendo descargar [BuildTools](https://visualstudio.microsoft.com/es/visual-cpp-build-tools/) 
 
-Primero de todo descargar [BuildTools](https://visualstudio.microsoft.com/es/visual-cpp-build-tools/)
-https://github.com/cgohlke/talib-build/releases
+Durante la instalación del venv:
+- Si no deja instalar la dependencia "zipline" del entorno, lo mejor es bajar un [whl](https://github.com/cgohlke/talib-build) y compilarlo:
 
-Si no deja instalar la dependencia "zipline" del entorno, lo mejor es bajar un [whl](https://github.com/cgohlke/talib-build) y compilarlo:
+Si ejecutas el fichero 'setup_env.py' se creará el entorno 'vev-quant'
 
-python -m venv quant-env
-.\quant-env\Scripts\Activate
+Si se ejecuta todo correctamente debería mostrar un mensaje tipo:
+_Dependencias instaladas correctamente._
 
-pip install zipline-reloaded
-pip install pandas_ta
-pip install setuptools
-pip install openpyxl
-pip install scipy
-pip install scikit-learn
+Para activar el entorno virtual, ejecuta:
+    python -m venv quant-env
+    .\quant-env\Scripts\Activate
