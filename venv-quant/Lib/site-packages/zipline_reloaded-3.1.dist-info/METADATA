@@ -1,0 +1,412 @@
+Metadata-Version: 2.1
+Name: zipline-reloaded
+Version: 3.1
+Summary: A Pythonic backtester for trading algorithms
+Author: Quantopian Inc
+Author-email: pm@ml4trading.io
+Maintainer: Stefan Jansen
+Maintainer-email: pm@ml4trading.io
+License: 
+                                         Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright 2018 Quantopian, Inc.
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Project-URL: homepage, https://ml4trading.io
+Project-URL: repository, https://github.com/stefan-jansen/zipline-reloaded
+Project-URL: documentation, https://zipline.ml4trading.io
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS
+Requires-Dist: pandas<3.0,>=1.3.0
+Requires-Dist: alembic>=0.7.7
+Requires-Dist: bcolz-zipline>=1.2.6
+Requires-Dist: bottleneck>=1.0.0
+Requires-Dist: click>=4.0.0
+Requires-Dist: empyrical-reloaded>=0.5.7
+Requires-Dist: h5py>=2.7.1
+Requires-Dist: intervaltree>=2.1.0
+Requires-Dist: iso3166>=2.1.1
+Requires-Dist: iso4217>=1.6.20180829
+Requires-Dist: lru-dict>=1.1.4
+Requires-Dist: multipledispatch>=0.6.0
+Requires-Dist: networkx>=2.0
+Requires-Dist: numexpr>=2.6.1
+Requires-Dist: patsy>=0.4.0
+Requires-Dist: python-dateutil>=2.4.2
+Requires-Dist: python-interface>=1.5.3
+Requires-Dist: pytz>=2018.5
+Requires-Dist: requests>=2.9.1
+Requires-Dist: scipy>=0.17.1
+Requires-Dist: six>=1.10.0
+Requires-Dist: sqlalchemy>=2
+Requires-Dist: statsmodels>=0.6.1
+Requires-Dist: tables>=3.4.3
+Requires-Dist: toolz>=0.8.2
+Requires-Dist: exchange-calendars>=4.2.4
+Requires-Dist: numpy<2,>=1.23.5; python_version < "3.10"
+Requires-Dist: numpy>=1.23.5; python_version < "3.12"
+Requires-Dist: numpy>=1.26.0; python_version >= "3.12"
+Provides-Extra: dev
+Requires-Dist: flake8>=3.9.1; extra == "dev"
+Requires-Dist: black>=24.0b1; extra == "dev"
+Requires-Dist: pre-commit>=2.12.1; extra == "dev"
+Requires-Dist: Cython>=0.29.21; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: Cython; extra == "docs"
+Requires-Dist: Sphinx>=1.3.2; extra == "docs"
+Requires-Dist: numpydoc>=0.5.0; extra == "docs"
+Requires-Dist: sphinx-autobuild>=0.6.0; extra == "docs"
+Requires-Dist: pydata-sphinx-theme; extra == "docs"
+Requires-Dist: sphinx-markdown-tables; extra == "docs"
+Requires-Dist: m2r2; extra == "docs"
+Provides-Extra: test
+Requires-Dist: tox; extra == "test"
+Requires-Dist: pytest>=7.2.0; extra == "test"
+Requires-Dist: pytest-cov>=3.0.0; extra == "test"
+Requires-Dist: pytest-xdist>=2.5.0; extra == "test"
+Requires-Dist: pytest-timeout>=1.4.2; extra == "test"
+Requires-Dist: parameterized>=0.6.1; extra == "test"
+Requires-Dist: testfixtures>=4.1.2; extra == "test"
+Requires-Dist: flake8>=3.9.1; extra == "test"
+Requires-Dist: matplotlib>=1.5.3; extra == "test"
+Requires-Dist: responses>=0.9.0; extra == "test"
+Requires-Dist: pandas-datareader>=0.2.1; extra == "test"
+Requires-Dist: click; extra == "test"
+Requires-Dist: coverage; extra == "test"
+Requires-Dist: pytest-rerunfailures; extra == "test"
+
+<p align="center">
+<a href="https://zipline.ml4trading.io">
+<img src="https://i.imgur.com/DDetr8I.png" width="25%">
+</a>
+</p>
+
+# Backtest your Trading Strategies
+
+| Version Info        | [![Python](https://img.shields.io/pypi/pyversions/zipline-reloaded.svg?cacheSeconds=2592000)](https://pypi.python.org/pypi/zipline-reloaded) [![Anaconda-Server Badge](https://anaconda.org/ml4t/zipline-reloaded/badges/platforms.svg)](https://anaconda.org/ml4t/zipline-reloaded) ![PyPI](https://img.shields.io/pypi/v/zipline-reloaded) [![Anaconda-Server Badge](https://anaconda.org/conda-forge/zipline-reloaded/badges/version.svg)](https://anaconda.org/conda-forge/zipline-reloaded)                                                                                                                                                                                                 |
+| ------------------- | ---------- |
+| **Test** **Status** | [![CI Tests](https://github.com/stefan-jansen/zipline-reloaded/actions/workflows/ci_tests_full.yml/badge.svg)](https://github.com/stefan-jansen/zipline-reloaded/actions/workflows/unit_tests.yml) [![PyPI](https://github.com/stefan-jansen/zipline-reloaded/actions/workflows/build_wheels.yml/badge.svg)](https://github.com/stefan-jansen/zipline-reloaded/actions/workflows/build_wheels.yml)  [![codecov](https://codecov.io/gh/stefan-jansen/zipline-reloaded/branch/main/graph/badge.svg)](https://codecov.io/gh/stefan-jansen/zipline-reloaded) |
+| **Community**       | [![Discourse](https://img.shields.io/discourse/topics?server=https%3A%2F%2Fexchange.ml4trading.io%2F)](https://exchange.ml4trading.io) [![ML4T](https://img.shields.io/badge/Powered%20by-ML4Trading-blue)](https://ml4trading.io) [![Twitter](https://img.shields.io/twitter/follow/ml4trading.svg?style=social)](https://twitter.com/ml4trading)                                                                                                                                                                                                                                                                                                                                                                                                          |
+
+Zipline is a Pythonic event-driven system for backtesting, developed and used as the backtesting and live-trading engine by [crowd-sourced investment fund Quantopian](https://www.bizjournals.com/boston/news/2020/11/10/quantopian-shuts-down-cofounders-head-elsewhere.html). Since it closed late 2020, the domain that had hosted these docs expired. The library is used extensively in the book [Machine Larning for Algorithmic Trading](https://ml4trading.io)
+by [Stefan Jansen](https://www.linkedin.com/in/applied-ai/) who is trying to keep the library up to date and available to his readers and the wider Python algotrading community.
+- [Join our Community!](https://exchange.ml4trading.io)
+- [Documentation](https://zipline.ml4trading.io)
+
+## Features
+
+- **Ease of Use:** Zipline tries to get out of your way so that you can focus on algorithm development. See below for a code example.
+- **Batteries Included:** many common statistics like moving average and linear regression can be readily accessed from within a user-written algorithm.
+- **PyData Integration:** Input of historical data and output of performance statistics are based on Pandas DataFrames to integrate nicely into the existing PyData ecosystem.
+- **Statistics and Machine Learning Libraries:** You can use libraries like matplotlib, scipy, statsmodels, and scikit-klearn to support development, analysis, and visualization of state-of-the-art trading systems.
+
+> **Note:** Release 3.05 makes Zipline compatible with Numpy 2.0, which requires Pandas 2.2.2 or higher. If you are using an older version of Pandas, you will need to upgrade it. Other packages may also still take more time to catch up with the latest Numpy release.
+
+> **Note:** Release 3.0 updates Zipline to use [pandas](https://pandas.pydata.org/pandas-docs/stable/whatsnew/v2.0.0.html) >= 2.0 and [SQLAlchemy](https://docs.sqlalchemy.org/en/20/) > 2.0. These are major version updates that may break existing code; please review the linked docs.
+
+> **Note:** Release 2.4 updates Zipline to use [exchange_calendars](https://github.com/gerrymanoim/exchange_calendars) >= 4.2. This is a major version update and may break existing code (which we have tried to avoid but cannot guarantee). Please review the changes [here](https://github.com/gerrymanoim/exchange_calendars/issues/61).
+
+## Installation
+
+Zipline supports Python >= 3.9 and is compatible with current versions of the relevant [NumFOCUS](https://numfocus.org/sponsored-projects?_sft_project_category=python-interface) libraries, including [pandas](https://pandas.pydata.org/) and [scikit-learn](https://scikit-learn.org/stable/index.html).
+
+### Using `pip`
+
+If your system meets the pre-requisites described in the [installation instructions](https://zipline.ml4trading.io/install.html), you can install Zipline using `pip` by running:
+
+```bash
+pip install zipline-reloaded
+```
+
+### Using `conda`
+
+If you are using the [Anaconda](https://www.anaconda.com/products/individual) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) distributions, you install `zipline-reloaded` from the channel `conda-forge` like so:
+
+```bash
+conda install -c conda-forge zipline-reloaded
+```
+
+You can also [enable](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html) `conda-forge` by listing it in your `.condarc`.
+
+In case you are installing `zipline-reloaded` alongside other packages and encounter [conflict errors](https://github.com/conda/conda/issues/9707), consider using [mamba](https://github.com/mamba-org/mamba) instead.
+
+See the [installation](https://zipline.ml4trading.io/install.html) section of the docs for more detailed instructions and the corresponding [conda-forge site](https://github.com/conda-forge/zipline-reloaded-feedstock).
+
+## Quickstart
+
+See our [getting started tutorial](https://zipline.ml4trading.io/beginner-tutorial).
+
+The following code implements a simple dual moving average algorithm.
+
+```python
+from zipline.api import order_target, record, symbol
+
+
+def initialize(context):
+    context.i = 0
+    context.asset = symbol('AAPL')
+
+
+def handle_data(context, data):
+    # Skip first 300 days to get full windows
+    context.i += 1
+    if context.i < 300:
+        return
+
+    # Compute averages
+    # data.history() has to be called with the same params
+    # from above and returns a pandas dataframe.
+    short_mavg = data.history(context.asset, 'price', bar_count=100, frequency="1d").mean()
+    long_mavg = data.history(context.asset, 'price', bar_count=300, frequency="1d").mean()
+
+    # Trading logic
+    if short_mavg > long_mavg:
+        # order_target orders as many shares as needed to
+        # achieve the desired number of shares.
+        order_target(context.asset, 100)
+    elif short_mavg < long_mavg:
+        order_target(context.asset, 0)
+
+    # Save values for later inspection
+    record(AAPL=data.current(context.asset, 'price'),
+           short_mavg=short_mavg,
+           long_mavg=long_mavg)
+```
+
+You can then run this algorithm using the Zipline CLI. But first, you need to download some market data with historical prices and trading volumes.
+
+This will download asset pricing data from [NASDAQ](https://data.nasdaq.com/databases/WIKIP) (formerly [Quandl](https://www.nasdaq.com/about/press-center/nasdaq-acquires-quandl-advance-use-alternative-data)).
+
+> This requires an API key, which you can get for free by signing up at [NASDAQ Data Link](https://data.nasdaq.com).
+
+```bash
+$ export QUANDL_API_KEY="your_key_here"
+$ zipline ingest -b quandl
+````
+
+The following will 
+- stream the through the algorithm over the specified time range. 
+- save the resulting performance DataFrame as `dma.pickle`, which you can load and analyze from Python using, e.g., [pyfolio-reloaded](https://github.com/stefan-jansen/pyfolio-reloaded).
+
+```bash
+$ zipline run -f dual_moving_average.py --start 2014-1-1 --end 2018-1-1 -o dma.pickle --no-benchmark
+```
+
+You can find other examples in the [zipline/examples](https://github.com/stefan-jansen/zipline-reloaded/tree/main/src/zipline/examples) directory.
+
+## Questions, suggestions, bugs?
+
+If you find a bug or have other questions about the library, feel free to [open an issue](https://github.com/stefan-jansen/zipline/issues/new) and fill out the template.
