@@ -43,7 +43,7 @@ Para facilitar la configuración de un entorno de trabajo consistente, he inclui
      ```
 
 5. **Activar el Entorno Virtual**:
-   - Una vez creado el entorno, actívalo con el siguiente comando:
+   - Una vez creado el entorno tenemos que activarlo desde la terminalo con el siguiente comando:
 
      ```bash
      venv-quant\Scripts\activate  # En Windows
@@ -52,6 +52,36 @@ Para facilitar la configuración de un entorno de trabajo consistente, he inclui
      ```
 
    - Al activarlo, verás `(venv-quant)` al inicio de la línea de tu terminal, indicando que estás trabajando en el entorno virtual correcto.
+6. **Usar el venv como kernel en archivos .ipynb**
+   - Instala `ipykernel` con el comando de más abajo. Esto permite que tu entorno virtual sea registrado como un kernel disponible para Jupyter Notebooks.
+   
+      ```
+      pip install ipykernel
+      ```
+7. **Selecciona el Entorno Virtual como Kernel en el Notebook de Jupyter**
+   - Abre el archivo `.ipynb` en VSCode.
+   - En la parte superior derecha del notebook, verás una opción que dice "Select Kernel" o "Python: [Interprete actual]".
+   - Haz clic en esta opción y selecciona tu entorno virtual `venv-quant` en la lista de intérpretes.
+8. **Verifica que el Kernel Activo sea el Correcto**
+   - Para confirmar que estás usando el entorno `venv-quant`, ejecuta la siguiente celda en tu notebook:
+   ```
+   import sys
+   print(sys.executable)
+   ```
+
+   La salida debería mostrar la ruta de tu entorno virtual (venv-quant). Si ves esa ruta, significa que el entorno virtual está activado correctamente en Jupyter Notebooks dentro de VSCode.
+
+
+python
+Copiar código
+ 
+
+
+
+
+
+
+
 
 ## 💡 Notas Adicionales
 
