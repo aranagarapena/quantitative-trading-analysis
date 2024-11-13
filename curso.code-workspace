@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../../Desktop/curso"
+		},
+		{
+			"path": "../../../Desktop/DWEC06"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"CodeGPT.apiKey": "CodeGPT Plus Beta",
+		"editor.fontSize": 12
+	}
+}
