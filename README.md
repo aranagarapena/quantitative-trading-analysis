@@ -9,10 +9,10 @@ This repository is available in multiple languages | Este repositorio está disp
 ## 📝 Summary | Resumen
 
 **English**:  
-A repository dedicated to quantitative trading analysis, including Jupyter notebooks and Python scripts for developing and testing algorithmic trading strategies. Features include statistical analysis, backtesting tools, and documentation to guide your research and strategy development.
+A learning-focused repository dedicated to quantitative trading analysis, featuring Jupyter notebooks and Python scripts for developing and testing algorithmic trading strategies. It includes resources for statistical analysis, backtesting tools, and documentation to support your learning and strategy development.
 
 **Español**:  
-Un repositorio dedicado al análisis cuantitativo de trading, que incluye notebooks de Jupyter y scripts en Python para desarrollar y probar estrategias algorítmicas de inversión. Incluye herramientas para análisis estadístico, backtesting y documentación para guiar tu investigación y desarrollo de estrategias.
+Un repositorio enfocado en el aprendizaje del análisis cuantitativo de trading, que incluye notebooks de Jupyter y scripts en Python para desarrollar y probar estrategias algorítmicas de inversión. Contiene recursos para análisis estadístico, herramientas de backtesting y documentación para apoyar tu aprendizaje y desarrollo de estrategias.
 
 ---
 
@@ -35,4 +35,3 @@ Este proyecto fue desarrollado y es mantenido por:
 Para consultas, sugerencias o colaboración en el proyecto, no dudes en ponerte en contacto.
 
 ---
-

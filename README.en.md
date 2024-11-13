@@ -69,6 +69,7 @@ This project was developed and is maintained by:
 - **Iker Arana**
 - [LinkedIn](https://www.linkedin.com/in/iker-arana-0ab741a6/) | [GitHub](https://github.com/aranagarapena?tab=repositories)
 
-For inquiries, suggestions, or collaboration on the project, please feel free to reach out.
+For inquiries, suggestions, or collaboration on the project, please feel free to reach out. 
+
 
 ---
