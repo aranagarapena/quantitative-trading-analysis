@@ -86,6 +86,7 @@ Copiar código
 ## 💡 Notas Adicionales
 
 - **Actualizar Dependencias**: Si necesitas añadir más paquetes, agrégalos a `requirements.txt` y vuelve a ejecutar el script `setup_env.py`.
+- **Si tienes problemas al importar `import pandas_ta as ta`**: ejecuta ```pip install -U git+https://github.com/twopirllc/pandas-ta```. Si el problema persiste acude a la [documentación original](https://github.com/twopirllc/pandas-ta?tab=readme-ov-file#features)
 - **Contribuciones**: Mejoras, sugerencias y contribuciones son bienvenidas.
 
 

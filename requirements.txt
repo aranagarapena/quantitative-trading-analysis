@@ -9,6 +9,7 @@ yfinance
 plotly
 nbformat
 pandas_ta
+pandas-ta
 zipline-reloaded
 scikit-learn
 ipykernel

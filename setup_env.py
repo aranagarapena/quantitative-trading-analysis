@@ -14,10 +14,6 @@ def in_virtualenv():
             (hasattr(sys, 'base_prefix') and sys.base_prefix != sys.prefix) or 
             'VIRTUAL_ENV' in os.environ)
 
-import subprocess
-import sys
-from pathlib import Path
-
 # Cambia "venv" si prefieres otro nombre
 nombre_venv = "venv-quant"
 
@@ -42,9 +38,31 @@ if requirements_file.is_file():
 else:
     print("El archivo 'requirements.txt' no se encontró en el directorio actual.")
 
-
 if in_virtualenv():
     venv_name = get_virtualenv_name()
     print(f"Estás trabajando en un entorno virtual: {venv_name}")
 else:
     print("No estás en un entorno virtual.")
+
+# Paso 3: Verificar si cada dependencia se ha instalado correctamente
+print("\nVerificando instalaciones de dependencias...")
+installed_correctly = True
+dependencies = [
+    "pandas", "numpy", "matplotlib", "scipy", "openpyxl", "setuptools", 
+    "ib_insync", "yfinance", "plotly", "nbformat", "pandas_ta", 
+    "zipline_reloaded", "scikit_learn", "ipykernel"
+]
+
+for dep in dependencies:
+    try:
+        __import__(dep)
+        print(f"{dep} instalado correctamente.")
+    except ImportError as e:
+        print(f"Error: {dep} no se ha instalado. {e}")
+        installed_correctly = False
+
+if installed_correctly:
+    print("\nTodas las dependencias están instaladas correctamente.")
+else:
+    print("\nAlgunas dependencias no se han instalado correctamente. Verifica el archivo requirements.txt.")
+#
