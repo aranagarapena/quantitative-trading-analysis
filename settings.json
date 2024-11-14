@@ -1,4 +1,0 @@
-{
-    "python.pythonPath": "${workspaceFolder}/venv-quant/Scripts/python"  // Para Windows
-    // "python.pythonPath": "${workspaceFolder}/venv/bin/python"  // Para Linux/macOS
-}

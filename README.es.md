@@ -48,7 +48,7 @@ Para facilitar la configuración de un entorno de trabajo consistente, he inclui
       ipykernel instalado correctamente.
       ```
 5. **Activar el Entorno Virtual**:
-   - Una vez creado el entorno tenemos que activarlo desde la terminalo con el siguiente comando:
+   - Una vez creado el entorno tenemos que activarlo y seleccionarlo desde la `terminal` con el siguiente comando:
 
      ```bash
      venv-quant\Scripts\activate  # En Windows
@@ -58,15 +58,51 @@ Para facilitar la configuración de un entorno de trabajo consistente, he inclui
 
    - Al activarlo, verás `(venv-quant)` al inicio de la línea de tu terminal, indicando que estás trabajando en el entorno virtual correcto.
 6. **Usar el venv como kernel en archivos .ipynb**
-   - Instala `ipykernel` con el comando de más abajo. Esto permite que tu entorno virtual sea registrado como un kernel disponible para Jupyter Notebooks.
+   - Instala `ipykernel` en tu entorno virtual desde la terminal con el comando de más abajo. Esto permite que tu entorno virtual sea registrado como un kernel disponible para Jupyter Notebooks.
    
       ```
       pip install ipykernel
       ```
+   -Reinicia VSCode
 7. **Selecciona el Entorno Virtual como Kernel en el Notebook de Jupyter**
    - Abre el archivo `.ipynb` en VSCode.
-   - En la parte superior derecha del notebook, verás una opción que dice "Select Kernel" o "Python: [Interprete actual]".
+   - En la parte superior derecha del notebook, verás una opción que dice "Select Kernel" o "Seleccionar el kernel".
    - Haz clic en esta opción y selecciona tu entorno virtual `venv-quant` en la lista de intérpretes.
+   - Si el kernel no te aparece prueba lo siguiente
+  
+   7.1. **Agregar el Entorno Virtual a Jupyter Manualmente**
+      Si `venv-quant` sigue sin aparecer, puedes agregarlo manualmente como un kernel en Jupyter:
+      - Activa el entorno virtual desde la terminal.
+      - Usa el siguiente comando para registrar el entorno virtual como un kernel de Jupyter:
+      ```
+      python -m ipykernel install --user --name=venv-quant --display-name "Python (venv-quant)"
+      ```
+      - Reinicia VSCode abre el notebook y selecciona "Python (venv-quant)" como kernel.
+
+
+
+
+
+
+   7.2. **Verifica la Configuración en `settings.json` de VSCode**
+   Si el problema persiste, puedes configurar manualmente el entorno virtual en el archivo `settings.json` de tu proyecto en VSCode:
+   - Crea una carpeta llamada .vscode en el directorio raíz de tu proyecto, si no existe.
+   - Dentro de .vscode, crea (o edita) el archivo settings.json y añade esta configuración, ajustando la ruta según tu sistema operativo:
+   ```
+   {
+    "python.pythonPath": "${workspaceFolder}/venv-quant/Scripts/python"  // Para Windows
+    // "python.pythonPath": "${workspaceFolder}/venv-quant/bin/python"  // Para Linux/macOS
+   }
+   ```
+   - Reinicia VSCode para que detecte la nueva configuración.
+
+
+
+
+
+
+
+
 8. **Verifica que el Kernel Activo sea el Correcto**
    - Para confirmar que estás usando el entorno `venv-quant`, ejecuta la siguiente celda en tu notebook:
    ```
