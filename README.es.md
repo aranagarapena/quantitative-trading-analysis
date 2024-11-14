@@ -41,7 +41,12 @@ Para facilitar la configuración de un entorno de trabajo consistente, he inclui
      ```
      Dependencias instaladas correctamente.
      ```
-
+   - Es normal que veas un mensaje de error como este:
+      ```
+      Error: zipline_reloaded no se ha instalado. No module named 'zipline_reloaded'
+      Error: scikit_learn no se ha instalado. No module named 'scikit_learn'      
+      ipykernel instalado correctamente.
+      ```
 5. **Activar el Entorno Virtual**:
    - Una vez creado el entorno tenemos que activarlo desde la terminalo con el siguiente comando:
 
@@ -71,9 +76,6 @@ Para facilitar la configuración de un entorno de trabajo consistente, he inclui
 
    La salida debería mostrar la ruta de tu entorno virtual (venv-quant). Si ves esa ruta, significa que el entorno virtual está activado correctamente en Jupyter Notebooks dentro de VSCode.
 
-
-python
-Copiar código
  
 
 
