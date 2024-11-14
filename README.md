@@ -7,7 +7,6 @@ A learning-focused repository dedicated to quantitative trading analysis, featur
 
 **Español**:  
 Un repositorio enfocado en el aprendizaje del análisis cuantitativo de trading, que incluye notebooks de Jupyter y scripts en Python para desarrollar y probar estrategias algorítmicas de inversión. Contiene recursos para análisis estadístico, herramientas de backtesting y documentación para apoyar tu aprendizaje y desarrollo de estrategias.
----
 
 This repository is available in multiple languages | Este repositorio está disponible en varios idiomas:
 - [English](README.en.md)
