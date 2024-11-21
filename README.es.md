@@ -133,7 +133,11 @@ Para facilitar la configuración de un entorno de trabajo consistente, he inclui
 ## 💡 Notas Adicionales
 
 - **Actualizar Dependencias**: Si necesitas añadir más paquetes, agrégalos a `requirements.txt` y vuelve a ejecutar el script `setup_env.py`.
-- **Si tienes problemas al importar `import pandas_ta as ta`**: ejecuta ```pip install -U git+https://github.com/twopirllc/pandas-ta```. Si el problema persiste acude a la [documentación original](https://github.com/twopirllc/pandas-ta?tab=readme-ov-file#features)
+- **Si tienes problemas al importar pandas-ta `import pandas_ta as ta`**: es común encontrarse con errores como ``` ImportError: cannot import name 'Nan' from 'numpy'```al instalar esta librería. Suele deberse a que la librería no se ha instalado correctamente. Te recomiendo realizar lo siguiente:
+  - Abre una `terminal` con tu `venv` corriendo, y ejecuta ```pip install pandas_ta``` para instalar la última versión estable. Si quieres también puedes instalar la última versión con ```pip install -U git+https://github.com/twopirllc/pandas-ta```. 
+  - Después de esto, reincia en notebook con el botón reiniciar de la parte superior central. 
+  - Además de esto, comprueba que has seleccionado correctamente el Kernel de tu entorno virtual para ejecutar el código.
+  - Si el problema persiste acude a la [documentación original](https://github.com/twopirllc/pandas-ta?tab=readme-ov-file#features)
 - **Contribuciones**: Mejoras, sugerencias y contribuciones son bienvenidas.
 
 

@@ -13,3 +13,4 @@ pandas-ta
 zipline-reloaded
 scikit-learn
 ipykernel
+sqlalchemy
