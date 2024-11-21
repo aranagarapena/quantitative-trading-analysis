@@ -31,7 +31,7 @@ Para facilitar la configuración de un entorno de trabajo consistente, he inclui
    - Ejecuta el siguiente comando en la terminal desde el directorio del proyecto:
 
      ```bash
-     python setup_env.py
+     python 0_setup_env.py
      ```
 
    - Este comando creará el entorno virtual `venv-quant` e instalará todas las dependencias de `requirements.txt`. Puedes cambiar el nombre del entorno virtual en el propio archivo si así lo prefieres.
@@ -57,6 +57,15 @@ Para facilitar la configuración de un entorno de trabajo consistente, he inclui
      ```
 
    - Al activarlo, verás `(venv-quant)` al inicio de la línea de tu terminal, indicando que estás trabajando en el entorno virtual correcto.
+   - Para confirmar que se está utilizando el `venv` adicionalmente puedes ejecutar desde la `terminal` el script `1_confirmar_venv.py` utilizando el comando 
+      ```
+         python 1_confirmar_venv.py
+      ```
+   - La salida debería mostrar algo similar a :
+      ```
+         {nombre completo de tu directorio}\venv-quant\Scripts\python.exe
+      ```
+   
 6. **Usar el venv como kernel en archivos .ipynb**
    - Instala `ipykernel` en tu entorno virtual desde la terminal con el comando de más abajo. Esto permite que tu entorno virtual sea registrado como un kernel disponible para Jupyter Notebooks.
    
