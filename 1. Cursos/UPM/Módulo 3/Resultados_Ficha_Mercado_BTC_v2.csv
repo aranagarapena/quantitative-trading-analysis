@@ -1,0 +1,71 @@
+Start Date;End Date;StartPrice;EndPrice;ATR normalized mean;Mean Price;Mean Volatility;ER mean;Min Price;Max Price
+2017-01-01;2017-12-31;"Ticker
+BTC-USD    998.325012
+Name: 2017-01-01 00:00:00+00:00, dtype: float64";"Ticker
+BTC-USD    14156.400391
+Name: 2017-12-31 00:00:00+00:00, dtype: float64";00.06;"Ticker
+BTC-USD    4006.033629
+dtype: float64";00.06;0332.98;0777.76;019497.40
+2018-01-01;2018-12-31;"Ticker
+BTC-USD    13657.200195
+Name: 2018-01-01 00:00:00+00:00, dtype: float64";"Ticker
+BTC-USD    3742.700439
+Name: 2018-12-31 00:00:00+00:00, dtype: float64";00.06;"Ticker
+BTC-USD    7572.298947
+dtype: float64";00.05;0437.23;03236.76;017527.00
+2019-01-01;2020-10-01;"Ticker
+BTC-USD    3843.52002
+Name: 2019-01-01 00:00:00+00:00, dtype: float64";"Ticker
+BTC-USD    10619.452148
+Name: 2020-10-01 00:00:00+00:00, dtype: float64";00.04;"Ticker
+BTC-USD    8170.519422
+dtype: float64";00.04;0336.51;03399.47;013016.23
+2020-10-01;2021-04-01;"Ticker
+BTC-USD    10619.452148
+Name: 2020-10-01 00:00:00+00:00, dtype: float64";"Ticker
+BTC-USD    59095.808594
+Name: 2021-04-01 00:00:00+00:00, dtype: float64";00.06;"Ticker
+BTC-USD    31079.682484
+dtype: float64";00.06;02091.27;010549.33;061243.09
+2021-04-01;2021-07-01;"Ticker
+BTC-USD    59095.808594
+Name: 2021-04-01 00:00:00+00:00, dtype: float64";"Ticker
+BTC-USD    33572.117188
+Name: 2021-07-01 00:00:00+00:00, dtype: float64";00.08;"Ticker
+BTC-USD    46357.285284
+dtype: float64";00.08;03335.57;031637.78;063503.46
+2021-07-01;2021-10-01;"Ticker
+BTC-USD    33572.117188
+Name: 2021-07-01 00:00:00+00:00, dtype: float64";"Ticker
+BTC-USD    48116.941406
+Name: 2021-10-01 00:00:00+00:00, dtype: float64";00.05;"Ticker
+BTC-USD    42054.666415
+dtype: float64";00.05;02175.48;029807.35;052633.54
+2021-10-01;2022-06-01;"Ticker
+BTC-USD    48116.941406
+Name: 2021-10-01 00:00:00+00:00, dtype: float64";"Ticker
+BTC-USD    29799.080078
+Name: 2022-06-01 00:00:00+00:00, dtype: float64";00.05;"Ticker
+BTC-USD    45547.954494
+dtype: float64";00.05;02130.30;028627.57;067566.83
+2022-06-01;2023-10-01;"Ticker
+BTC-USD    29799.080078
+Name: 2022-06-01 00:00:00+00:00, dtype: float64";"Ticker
+BTC-USD    27983.75
+Name: 2023-10-01 00:00:00+00:00, dtype: float64";00.03;"Ticker
+BTC-USD    23712.63244
+dtype: float64";00.03;0790.83;015787.28;031476.05
+2023-10-01;2024-03-01;"Ticker
+BTC-USD    27983.75
+Name: 2023-10-01 00:00:00+00:00, dtype: float64";"Ticker
+BTC-USD    62440.632812
+Name: 2024-03-01 00:00:00+00:00, dtype: float64";00.03;"Ticker
+BTC-USD    40383.00697
+dtype: float64";00.03;01419.35;026756.80;062504.79
+2024-03-01;2024-10-01;"Ticker
+BTC-USD    62440.632812
+Name: 2024-03-01 00:00:00+00:00, dtype: float64";"Ticker
+BTC-USD    60837.007812
+Name: 2024-10-01 00:00:00+00:00, dtype: float64";00.04;"Ticker
+BTC-USD    63960.824455
+dtype: float64";00.04;02685.43;053948.75;073083.50
