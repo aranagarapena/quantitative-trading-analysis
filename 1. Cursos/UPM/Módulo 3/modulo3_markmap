@@ -1,0 +1,152 @@
+# Estrategias de Trading para el "Buy Side" con Data Mining Manual
+## 1. Introducción
+### Tipos de sistemas de trading
+#### Clasificación según el tipo de inversor
+- Buy Side
+- Sell Side
+#### Clasificación según el proceso de creación
+- Métodos científicos (Quants)
+  - **Ejemplo:** Modelo basado en la correlación entre el IBEX e Inditex.
+- Data Mining (Black Box)
+  - Manual
+  - Automático
+### Métodos científicos (Quants)
+- Creación de hipótesis:
+  - Declaración clara.
+  - Predictiva.
+  - Resultados esperables definidos.
+  - Métodos de verificación.
+  - **Ejemplo:** Relación entre la inflación y el precio del petróleo.
+### Data Mining (DM)
+- Encontrar ineficiencias del mercado.
+- Tipos:
+  - Manual
+  - Automático
+- Desventaja: Detección tardía de roturas del modelo.
+### Ventajas del DM Manual
+- Curva de aprendizaje accesible.
+- Resultados comparables con Quants.
+- **Ejemplo de DM:** Identificación de tendencias en gráficos.
+
+## 2. Edges, Lógicas y Estrategias
+### Edges
+- Definición: Factores que generan sesgos en retornos.
+- Tipos:
+  - Edges "de libro": **Ejemplo:** Gráfico estacional del futuro del azúcar.
+  - Edges "estadísticos": Anomalías en series de precios.
+- Importancia: Base de estrategias refinadas con reglas de negociación.
+### Lógicas
+- Reglas que modelan un edge.
+- **10 lógicas comunes:**
+  - Swing Trading
+  - Mean Reversion
+  - Momento
+  - Value Investing
+  - Pautas de Calendario
+  - Scalping
+  - Reconocimiento de Patrones Gráficos
+  - Arbitraje Estadístico
+  - Market Making
+  - Eventos Macroeconómicos
+### Estrategias
+- Elementos:
+  - Lógica de base.
+  - Subsistemas de entrada y cierre.
+  - Gestión monetaria.
+  - Metasistemas.
+- Evaluación:
+  - Individual y conjunta.
+
+## 3. Procedimiento de Diseño de Sistemas
+### Objetivo: Diseñar sistemas robustos y eficientes.
+### Conceptos estadísticos básicos
+- Población vs. Muestra.
+- Histogramas y tablas de frecuencias.
+- Resumen numérico: Media, Mediana, Desviación estándar, etc.
+### Requisitos del sistema
+- Esperanza matemática positiva.
+- Robustez estadística.
+- Probabilidad de alcanzar objetivos anuales.
+### Creación del sistema
+#### Gestión de ideas:
+- Identificar oportunidades.
+- Definir lógicas y expectativas.
+#### Homologación de mercados:
+- **Ficha de Mercado (TST1):**
+  - Información del mercado: liquidez, spread, volumen, horarios.
+  - **Ejemplo:** Mercado de futuros en índices europeos.
+#### Modelo de construcción:
+- Selección de mercados homologados.
+- Periodo de diseño (Training, Test, Validation).
+- Desarrollo:
+  - Lógica del sistema: Puntos de entrada y salida.
+  - Evaluación superficial.
+  - Codificación.
+- Documentación:
+  - Diagramas de flujo.
+  - Código estructurado.
+
+## 4. Diseñando un Sistema
+### Ejemplo práctico
+#### Pasos preliminares
+- Selección de activos y periodos.
+- Elección de Time Frame.
+#### Construcción
+- Evaluar consistencia paramétrica.
+- **Ejemplo:** Cruce del precio con su media móvil exponencial.
+#### Soporte
+- Aplicación de filtros.
+  - **Ejemplo:** Filtro horario y de tendencias.
+- Validación en periodos de test y validación.
+
+## 5. Aplicación de Filtros: Sistema IDORU
+### Importancia de los filtros
+- Lentes que mejoran precisión.
+### Filtros aplicados al sistema
+- Filtros horarios:
+  - Intervalos óptimos.
+- Filtros de tendencia:
+  - **Ejemplo:** Uso del Choppiness Index.
+- Filtros de volatilidad:
+  - **Ejemplo:** Índice de Divergencia.
+
+## 6. Sistemas Swing: Sistema TOTEM
+### Características
+- Baja frecuencia, robustez, bajo drawdown.
+- **Ejemplo:** Futuro del Bund.
+### Desarrollo
+- Lógica básica: Cruce del precio con media móvil.
+- Mejoras: Incorporación de media acelerada.
+- Mecanismos de entrada y salida.
+### Evaluación
+- Optimización paramétrica.
+- **Ejemplo:** Filtros basados en RAVI para largo plazo.
+
+## 7. Máquinas de Hacer Sistemas
+### Generadores automatizados
+- Solución a procesos lentos.
+- Métodos: Redes neuronales, Programación genética.
+- **Ejemplo:** Optimización de estrategias usando Montecarlo.
+### Programación genética
+- Simula selección natural.
+- Etapas:
+  - Generación inicial.
+  - Evaluación y selección.
+  - Evolución.
+- Evaluación de robustez: Walk Forward Analysis.
+
+## 8. Sistema Intradiario: Sistema DKTREND
+### Lógica
+- Seguir tendencias intradiarias con medias móviles.
+- **Ejemplo:** Entrada en largos al cruzar el precio una EMA de máximos.
+### Resultados
+- Reducción de operaciones.
+- Mejora de Profit Factor.
+### Aplicación de filtros
+- Filtros direccionales y de ADX.
+- Salidas mejoradas:
+  - Stop Loss dinámicos.
+  - Break Even.
+
+### Conclusión
+- Posibilidades de mejora y adaptabilidad.
